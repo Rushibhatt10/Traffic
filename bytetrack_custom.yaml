@@ -1,0 +1,13 @@
+# bytetrack_custom.yaml
+# Tuned ByteTrack configuration for Indian dense traffic survey.
+# track_buffer=60  : keep lost tracks alive for ~2 sec (recovers bikes after occlusion)
+# match_thresh=0.85: generous IoU match so re-appearing vehicles get their original ID
+# fuse_score=True  : fuse detection confidence with IoU for better low-conf associations
+
+tracker_type: bytetrack
+track_high_thresh: 0.25
+track_low_thresh:  0.05
+new_track_thresh:  0.25
+track_buffer:      60
+match_thresh:      0.85
+fuse_score:        True
